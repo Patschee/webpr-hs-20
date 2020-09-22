@@ -8,18 +8,11 @@
 //
 // document.writeln(two(1,1,1))
 
-document.writeln("Woche2: \n")
+document.writeln("Woche2:")
 
+const plus = x => y => x + y
 
-const id = y => y
-const fst = x => y => x
-
-const snd = fst => id => id
-
-
-const x_ = Math.random();
-const y_ = Math.random();
-document.writeln(snd(x_)(y_) === y_)
+document.writeln(plus(10))
 
 
 document.writeln()
