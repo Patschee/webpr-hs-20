@@ -18,7 +18,11 @@ let snake = [
 let food = {x: 15, y: 15};
 
 function snakeEquals(a, b) { 
-	/* fill here */
+	if( a.y === b.y & a.x === b.x){
+	    return true;
+    } else {
+	    return false;
+    }
 }
 
 function changeDirection(orientation) {
