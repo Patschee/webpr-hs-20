@@ -1,7 +1,7 @@
 
 const radius = 10;
 const ball = {x:20, y:0, dx: 5, dy: 1};
-let   old  = {x: ball.x, y: ball.y};
+let   old  = {x: ball.x, y: ball.y, dx: ball.dx, dy: ball.dy};
 
 function start() {
     const canvas  = document.getElementById("canvas");
@@ -15,6 +15,10 @@ function start() {
 }
 
 function nextBoard() {
+    old.x = ball.x;
+    old.y = ball.y;
+    old.dx = ball.dx;
+    old.dy = ball.dy;
     // keep old ball values for the sake of efficient clearing of the old display
 
     // handle ball is hitting the bounds
